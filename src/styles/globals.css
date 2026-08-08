@@ -1,0 +1,117 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+@keyframes moveGrid {
+  from {
+    background-position:
+      center,
+      0 0,
+      0 0,
+      center;
+  }
+
+  to {
+    background-position:
+      center,
+      50px 50px,
+      50px 50px,
+      center;
+  }
+}
+
+/* body {
+  background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)),
+    linear-gradient(rgba(245,196,0,.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,196,0,.25) 1px, transparent 1px),
+    url("../assets/images/hero/hero.png");
+
+  background-size:
+    cover,
+    50px 50px,
+    50px 50px,
+    cover;
+
+  background-repeat:
+    no-repeat,
+    repeat,
+    repeat,
+    no-repeat;
+
+  animation: moveGrid 20s linear infinite;
+} */
+
+
+body {
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.5),
+      rgba(0,0,0,.5)
+    ),
+    linear-gradient(rgba(245,196,0,.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(245,196,0,.25) 1px, transparent 1px),
+    url("../assets/images/hero/hero.png");
+
+  background-size:
+    cover,
+    50px 50px,
+    50px 50px,
+    cover;
+
+  background-position:
+    center,
+    center,
+    center,
+    center;
+
+  background-repeat:
+    no-repeat,
+    repeat,
+    repeat,
+    no-repeat;
+
+  background-attachment:
+    fixed,
+    fixed,
+    fixed,
+    fixed;
+
+  animation: moveGrid 20s linear infinite;
+
+  font-family: "Inter", sans-serif;
+  /* background: #111111; */
+  color: #ffffff;
+  overflow-x: hidden;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+::selection {
+  background: #f5c400;
+  color: #111111;
+}

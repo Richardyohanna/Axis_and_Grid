@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* ----------------------------- */
+/* THEME VARIABLES */
+/* ----------------------------- */
+
+@theme {
+
+  --color-primary: #111111;
+
+  --color-surface: #181818;
+
+  --color-yellow: #F5C400;
+
+  --color-border: #2b2b2b;
+
+  --color-muted: #8a8a8a;
+
+  --color-white: #ffffff;
+
+}
+
+/* ----------------------------- */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-primary);
+    background-image: url("./assets/hero.png");
+    color: white;
+    overflow-x: hidden;
+    
+}
+
+*{
+    box-sizing:border-box;
+}

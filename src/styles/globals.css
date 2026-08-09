@@ -126,18 +126,36 @@ img {
 .background-image {
   position: absolute;
   inset: 0;
-
   background-image: url("../assets/images/hero/hero.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+  .background-image {
+    background-position: center center;
+  }
+}
+
 .background-overlay {
   position: absolute;
   inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
 
-  background: rgba(0, 0, 0, 0.6);
+/* Tablets */
+@media (max-width: 768px) {
+  .background-overlay {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+  .background-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .background-grid {

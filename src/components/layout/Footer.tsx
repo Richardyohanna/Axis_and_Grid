@@ -120,7 +120,7 @@ const Footer = () => {
         </div>
 
         {/* Engineering reference */}
-        <div className="flex flex-col gap-5 py-7 font-mono text-[9px] uppercase tracking-[0.2em] text-white/25 md:flex-row md:items-center md:justify-between">
+        {/* <div className="flex flex-col gap-5 py-7 font-mono text-[9px] uppercase tracking-[0.2em] text-white/25 md:flex-row md:items-center md:justify-between">
           <span>AXIS A</span>
 
           <div className="flex flex-1 items-center gap-3 md:mx-10">
@@ -134,7 +134,7 @@ const Footer = () => {
           </div>
 
           <span>GRID 04</span>
-        </div>
+        </div> */}
 
         {/* Bottom */}
         <div className="flex flex-col gap-3 border-t border-white/10 pt-6 text-[10px] uppercase tracking-[0.15em] text-white/30 md:flex-row md:items-center md:justify-between">

@@ -6,15 +6,17 @@ import Container from "../../components/ui/Container";
 import FloatingProjectCard from "../../components/ui/FloatingProjectCard";
 import useParallax from "../../hooks/useParallax";
 import useHeroAnimation from "../../hooks/useHeroAnimation";
-import { projects } from "../../data/projects";
+import { heroFeaturedProjects } from "../../data/projects";
+
 
 // Rotating second line of the headline — cycles in step with the
 // background project so the whole hero feels like one live system.
 const HEADLINE_LINES = [
   "from the first line",
   "in Every Detail",
-  "strength. endurance.",
   `built to outlast `,
+  "strength. endurance.",
+  
 ];
 
 const ROTATE_INTERVAL = 5000;
@@ -34,12 +36,12 @@ const Hero = () => {
 
   useEffect(() => {
     const timer = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % projects.length);
+      setActiveIndex((prev) => (prev + 1) % heroFeaturedProjects.length);
     }, ROTATE_INTERVAL);
     return () => clearInterval(timer);
   }, []);
 
-  const activeProject = projects[activeIndex];
+  const activeProject = heroFeaturedProjects[activeIndex];
   const activeLine = HEADLINE_LINES[activeIndex % HEADLINE_LINES.length];
 
   return (
@@ -68,7 +70,7 @@ const Hero = () => {
       </div>
 
       {/* Dark gradient overlay for legibility */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/70 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30" />
 
       {/* Content */}
       <Container className="relative z-10 flex flex-col justify-center py-16 lg:py-20">
@@ -127,7 +129,7 @@ const Hero = () => {
             </AnimatePresence>
 
             <div className="hidden gap-1.5 sm:flex">
-              {projects.map((project, i) => (
+              {heroFeaturedProjects.map((project, i) => (
                 <button
                   key={project.id}
                   onClick={() => setActiveIndex(i)}

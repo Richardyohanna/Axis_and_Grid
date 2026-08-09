@@ -40,6 +40,7 @@ import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
+import hero from "../assets/images/hero/hero.png";
 
 export const projects = [
   {
@@ -74,6 +75,42 @@ export const projects = [
   },
   {
     id: 4,
+    title: "Bridge Construction",
+    category: "Infrastructure",
+    location: "Kaduna",
+    year: "2024",
+    image: project4,
+    featured: true,
+    size: "large",
+  },
+];
+
+
+
+export const heroFeaturedProjects = [
+
+  {
+    id: 1,
+    title: "Commercial Office Complex",
+    category: "Commercial",
+    location: "Lagos",
+    year: "2025",
+    image: hero,
+    featured: false,
+    size: "small",
+  },
+  {
+    id: 2,
+    title: "Drainage Infrastructure",
+    category: "Civil",
+    location: "Jos",
+    year: "2025",
+    image: project3,
+    featured: false,
+    size: "small",
+  },
+  {
+    id: 3,
     title: "Bridge Construction",
     category: "Infrastructure",
     location: "Kaduna",

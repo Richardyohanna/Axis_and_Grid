@@ -8,15 +8,11 @@ import useParallax from "../../hooks/useParallax";
 import useHeroAnimation from "../../hooks/useHeroAnimation";
 import { heroFeaturedProjects } from "../../data/projects";
 
-
-// Rotating second line of the headline — cycles in step with the
-// background project so the whole hero feels like one live system.
 const HEADLINE_LINES = [
   "from the first line",
   "in Every Detail",
   `built to outlast `,
   "strength. endurance.",
-  
 ];
 
 const ROTATE_INTERVAL = 5000;
@@ -69,26 +65,41 @@ const Hero = () => {
         </AnimatePresence>
       </div>
 
-      {/* Dark gradient overlay for legibility */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/10 " />
 
-      {/* Content */}
-      <Container className="relative z-10 flex flex-col justify-center py-16 lg:py-20">
-        <div className="max-w-3xl">
+      <Container
+        className="
+          relative z-10
+          flex flex-col justify-center
+          items-center
+          py-16
+          lg:items-start
+          lg:py-20
+        "
+      >
+        <div className="max-w-3xl text-center lg:text-left">
+
           <h1
             ref={titleRef}
-            className="text-2xl font-black uppercase leading-[1.05] text-white sm:text-4xl lg:text-4xl xl:text-6xl"
+            className="text-3xl font-black uppercase leading-[1.05] text-white sm:text-5xl lg:text-5xl xl:text-6xl"
           >
             Precision
             <br />
-            <span className="relative inline-block overflow-hidden align-top">
+
+            {/* Fixed-height wrapper reserves room for a 2-line wrap at every
+               breakpoint, so the headline never changes the layout height
+               when it swaps to a longer/shorter line. */}
+            <span className="relative block min-h-[68px] overflow-hidden sm:min-h-[108px] lg:min-h-[108px] xl:min-h-[132px]">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={activeLine}
                   initial={{ y: "100%", opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: "-100%", opacity: 0 }}
-                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                  transition={{
+                    duration: 0.6,
+                    ease: "easeInOut",
+                  }}
                   className="inline-block text-yellow"
                 >
                   {activeLine}
@@ -97,36 +108,43 @@ const Hero = () => {
             </span>
           </h1>
 
-          <p className="mt-4 max-w-xl text-lg leading-8 text-white/80">
+          <p className="mx-auto max-w-xl text-lg leading-8 text-white/80 lg:mx-0">
             Axis & Grids delivers residential, commercial, and renovation
             projects across Nigeria with registered, professionally
             supervised construction from foundation to handover.
           </p>
 
-          <div className="mt-10 flex flex-wrap gap-5">
+          <div className="mt-5 flex flex-wrap justify-center gap-5 lg:justify-start">
             <Button>Start Your Project</Button>
             <Button variant="secondary">Explore Projects</Button>
           </div>
 
           {/* Live "now building" indicator */}
-          <div className="mt-12 flex items-center gap-4">
-            <span className="relative flex h-2 w-2">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
+
+            <span className="relative flex h-2 w-2 shrink-0">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-yellow opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-yellow" />
             </span>
 
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeProject.id}
-                initial={{ opacity: 0, x: -8 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 8 }}
-                transition={{ duration: 0.4 }}
-                className="font-mono text-xs uppercase tracking-[0.25em] text-white/60"
-              >
-                Now Building — {activeProject.category} / {activeProject.location}
-              </motion.div>
-            </AnimatePresence>
+            {/* Fixed-width, truncated so varying project name/category
+               lengths don't push the dots around */}
+            <div className="w-[220px] shrink-0 sm:w-[260px]">
+              <AnimatePresence mode="wait">
+                <motion.div
+                  key={activeProject.id}
+                  initial={{ opacity: 0, x: -8 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 8 }}
+                  transition={{ duration: 0.4 }}
+                  className="truncate font-mono text-xs uppercase tracking-[0.25em] text-white/60"
+                  title={`Now Building — ${activeProject.category} / ${activeProject.location}`}
+                >
+                  Now Building — {activeProject.category} /{" "}
+                  {activeProject.location}
+                </motion.div>
+              </AnimatePresence>
+            </div>
 
             <div className="hidden gap-1.5 sm:flex">
               {heroFeaturedProjects.map((project, i) => (
@@ -135,11 +153,14 @@ const Hero = () => {
                   onClick={() => setActiveIndex(i)}
                   aria-label={`Show ${project.title}`}
                   className={`h-1.5 rounded-full transition-all duration-500 ${
-                    i === activeIndex ? "w-6 bg-yellow" : "w-1.5 bg-white/30"
+                    i === activeIndex
+                      ? "w-6 bg-yellow"
+                      : "w-1.5 bg-white/30"
                   }`}
                 />
               ))}
             </div>
+
           </div>
         </div>
 

@@ -12,10 +12,10 @@ export const company = {
   phone: "+234 (0) 000 000 0000",
 
   heroDescription:
-    "Axis & Grid delivers residential, commercial and civil engineering projects across Nigeria with professionally supervised construction from foundation to handover.",
+    "Axis & Grids delivers residential, commercial and civil engineering projects across Nigeria with professionally supervised construction from foundation to handover.",
 
   about:
-    "Axis & Grid Engineering & Construction is a multidisciplinary engineering company delivering residential, commercial and civil engineering projects with precision, professionalism and technical excellence.",
+    "Axis & Grids Engineering & Construction is a multidisciplinary engineering company delivering residential, commercial and civil engineering projects with precision, professionalism and technical excellence.",
 
   mission:
     "To deliver durable, innovative and sustainable engineering solutions that exceed client expectations.",

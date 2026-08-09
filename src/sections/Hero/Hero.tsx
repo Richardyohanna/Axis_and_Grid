@@ -13,7 +13,7 @@ const Hero = () => {
 
   const imageRef = useRef<HTMLImageElement>(null);
   const titleRef = useRef<HTMLDivElement>(null);
-const contentRef = useRef<HTMLDivElement>(null);
+  const contentRef = useRef<HTMLDivElement>(null);
 
   useParallax(imageRef,120);
   useHeroAnimation({

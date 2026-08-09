@@ -51,7 +51,7 @@ body {
 
 body {
 
-  background:
+  /* background:
     linear-gradient(
       rgba(0,0,0,.5),
       rgba(0,0,0,.5)
@@ -84,10 +84,10 @@ body {
     fixed,
     fixed;
 
-  animation: moveGrid 20s linear infinite;
+  animation: moveGrid 20s linear infinite; */
 
   font-family: "Inter", sans-serif;
-  /* background: #111111; */
+  background: #111111;
   color: #ffffff;
   overflow-x: hidden;
   
@@ -114,4 +114,58 @@ img {
 ::selection {
   background: #f5c400;
   color: #111111;
+}
+
+.site-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  inset: 0;
+
+  background-image: url("../assets/images/hero/hero.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.background-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.background-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(245, 196, 0, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(245, 196, 0, 0.1) 1px,
+      transparent 1px
+    );
+
+  background-size: 50px 50px;
+
+  animation: moveGrid 20s linear infinite;
+}
+
+@keyframes moveGrid {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 50px 50px;
+  }
 }

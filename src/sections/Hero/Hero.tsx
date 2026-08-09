@@ -70,7 +70,7 @@ const Hero = () => {
       </div>
 
       {/* Dark gradient overlay for legibility */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-black/10 " />
 
       {/* Content */}
       <Container className="relative z-10 flex flex-col justify-center py-16 lg:py-20">

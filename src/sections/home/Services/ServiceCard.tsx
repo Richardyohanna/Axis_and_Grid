@@ -22,7 +22,7 @@ const ServiceCard = ({ service, index }: Props) => {
         overflow-hidden
         border
         border-white/10
-        bg-white/[0.08]
+        bg-white/[0.18]
         p-8
         transition-all
         duration-500

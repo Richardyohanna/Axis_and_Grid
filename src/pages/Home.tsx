@@ -2,12 +2,12 @@ import About from "../sections/home/About/About";
 import Hero from "../sections/Hero/Hero";
 import Services from "../sections/home/Services/Services";
 import Projects from "../sections/home/Projects/Projects";
-import RevealImage from "../components/effects/RevealImage";
+
 import useParallax from "../hooks/useParallax";
-import heroImage from "../assets/images/hero/hero.png";
+
 import useHeroAnimation from "../hooks/useHeroAnimation";
 import { useRef} from "react";
-import GridOverlay from "../components/ui/GridOverlay";
+
 
 const Home = () => {
 

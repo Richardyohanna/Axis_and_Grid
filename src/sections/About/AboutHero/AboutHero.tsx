@@ -93,7 +93,7 @@ const AboutHero = () => {
             {/* REF: AX-GRID-001 */}
           </div>
         </div>
-        <div className="absolute z-10 left-100 right-0 -top-45 h-full w-full  pt-28 lg:pt-42">
+        <div className="absolute z-10 left-100 right-0 -top-45 h-full w-full  pt-28 lg:pt-52">
              <WireframeBuilding
                 floors={3}
                 line="#000000"

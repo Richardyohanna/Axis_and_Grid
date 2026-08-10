@@ -10,7 +10,7 @@ const AboutHero = () => {
 
 
   return (
-    <Section className="relative min-h-[75vh] overflow-hidden bg-[#ffffff] text-black">
+    <Section className="relative min-h-[75vh] overflow-hidden bg-[#ffffff] text-black overflow-hidden pt-28 lg:pt-42">
       {/* Blueprint grid */}
       <div
         className="
@@ -93,7 +93,7 @@ const AboutHero = () => {
             {/* REF: AX-GRID-001 */}
           </div>
         </div>
-        <div className="absolute z-10 left-100 right-0 -top-15 h-full w-full">
+        <div className="absolute z-10 left-100 right-0 -top-45 h-full w-full  pt-28 lg:pt-42">
              <WireframeBuilding
                 floors={3}
                 line="#000000"

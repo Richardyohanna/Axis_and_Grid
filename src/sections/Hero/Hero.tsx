@@ -82,7 +82,7 @@ const Hero = () => {
 
           <h1
             ref={titleRef}
-            className="text-3xl font-black uppercase leading-[1.05] text-white sm:text-4xl lg:text-5xl xl:text-6xl"
+            className="text-3xl font-black uppercase leading-[1.05] text-white sm:text-4xl lg:text-6xl xl:text-6.5xl"
           >
             Precision
             <br />

@@ -1,14 +1,23 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import logo from "../../assets/logo/logo.png";
 import { navigation } from "../../data/navigation";
 import useScroll from "../../hooks/useScroll";
 import { cn } from "../../lib/utils";
 
+
 const Navbar = () => {
+ 
+  
+  
+  const location = useLocation();
+
+  const isHomePage = location.pathname === "/";
   const scrolled = useScroll();
   const [open, setOpen] = useState(false);
+
+  const transparent = isHomePage && !scrolled;
 
   return (
     
@@ -16,9 +25,9 @@ const Navbar = () => {
       className={cn(
         "fixed top-0 left-0 z-50 w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)]",
         "flex items-center justify-end px-[60px]",
-        scrolled
-          ? "h-[70px] bg-[#111111]/95 backdrop-blur-xl border-b border-[#F5C400]"
-          : "h-25 bg-transparent border-b border-transparent"
+          transparent
+            ? "h-25 bg-transparent border-b border-transparent"
+            : "h-[70px] bg-[#111111]/95 backdrop-blur-xl border-b border-[#F5C400]"
       )}
     >
      

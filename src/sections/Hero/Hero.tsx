@@ -9,10 +9,11 @@ import useHeroAnimation from "../../hooks/useHeroAnimation";
 import { heroFeaturedProjects } from "../../data/projects";
 
 const HEADLINE_LINES = [
-  "from the first line",
-  "in Every Detail",
+  "from the First Line of Design",
+  "in Every Detail, Built to Last.",
+  "strength. endurance",
   `built to outlast `,
-  "strength. endurance.",
+  
 ];
 
 const ROTATE_INTERVAL = 5000;
@@ -41,7 +42,7 @@ const Hero = () => {
   const activeLine = HEADLINE_LINES[activeIndex % HEADLINE_LINES.length];
 
   return (
-    <section className="relative min-h-[90vh] overflow-hidden pt-28 lg:pt-32">
+    <section className="relative min-h-screen overflow-hidden pt-28 lg:pt-42">
       {/* Rotating background */}
       <div className="absolute inset-0">
         <AnimatePresence mode="sync">
@@ -81,7 +82,7 @@ const Hero = () => {
 
           <h1
             ref={titleRef}
-            className="text-3xl font-black uppercase leading-[1.05] text-white sm:text-5xl lg:text-5xl xl:text-6xl"
+            className="text-3xl font-black uppercase leading-[1.05] text-white sm:text-4xl lg:text-5xl xl:text-6xl"
           >
             Precision
             <br />
@@ -89,7 +90,7 @@ const Hero = () => {
             {/* Fixed-height wrapper reserves room for a 2-line wrap at every
                breakpoint, so the headline never changes the layout height
                when it swaps to a longer/shorter line. */}
-            <span className="relative block min-h-[68px] overflow-hidden sm:min-h-[108px] lg:min-h-[108px] xl:min-h-[132px]">
+            <span className="relative block min-h-[38px] overflow-hidden sm:min-h-[38px] lg:min-h-[38px] xl:min-h-[52px]">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={activeLine}

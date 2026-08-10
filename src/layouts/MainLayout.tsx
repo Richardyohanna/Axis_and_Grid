@@ -1,11 +1,13 @@
 import { Outlet } from "react-router-dom";
-
+import SmoothScroll from "../components/providers/SmoothScroll";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 
 const MainLayout = () => {
   return (
     <>
+      <SmoothScroll />
+
       <Navbar />
 
       <main className="overflow-x-hidden">

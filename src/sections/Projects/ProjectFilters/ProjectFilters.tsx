@@ -21,7 +21,7 @@ const ProjectFilters = ({
     <div className="fixed top-17 w-full z-30 border-b border-black/10 bg-white/90 text-black backdrop-blur-sm ">
       <div className="mx-auto flex max-w-7xl items-center justify-center overflow-x-auto px-6 lg:px-8">
         <div className="flex min-w-max">
-          {categories.map((category, index) => {
+          {categories.map((category) => {
             const active = category === activeCategory;
 
             return (

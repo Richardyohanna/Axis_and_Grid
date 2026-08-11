@@ -1,7 +1,7 @@
 // import ProjectsHero from "../sections/Projects/ProjectsHero/ProjectsHero";
 import ProjectFilters from "../sections/Projects/ProjectFilters/ProjectFilters";
 import ProjectsGrid from "../sections/Projects/ProjectsGrid/ProjectsGrid";
-import ProjectsCTA from "../sections/Projects/ProjectsCTA/ProjectsCTA";
+// import ProjectsCTA from "../sections/Projects/ProjectsCTA/ProjectsCTA";
 import ContactCTA from "../sections/home/ContactCTA/ContactCTA";
 
 import type { ProjectCategory}  from "../data/projects";

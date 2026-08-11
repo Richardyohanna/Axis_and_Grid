@@ -24,7 +24,7 @@ const Navbar = () => {
     <header
       className={cn(
         "fixed top-0 left-0 z-50 w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)]",
-        "flex items-center justify-end px-[60px]",
+        "flex items-center justify-end font-['Barlow_Condensed'] px-[60px]",
           transparent
             ? "h-25 bg-transparent border-b border-transparent"
             : "h-[70px] bg-[#111111]/95 backdrop-blur-xl border-b border-[#F5C400]"
@@ -51,7 +51,7 @@ const Navbar = () => {
             to={item.href}
             className={({ isActive }) =>
               cn(
-                "relative py-2 font-inter text-[13px] font-medium uppercase tracking-[1.5px] transition-colors duration-300",
+                "relative py-1 text-[22px] font-medium uppercase tracking-[1.5px] transition-colors duration-300",
                 "after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:h-[2px] after:w-0",
                 "after:-translate-x-1/2 after:bg-[#F5C400] after:transition-all after:duration-300 after:ease-[cubic-bezier(0.4,0,0.2,1)]",
                 "hover:text-[#F5C400] hover:after:w-full",

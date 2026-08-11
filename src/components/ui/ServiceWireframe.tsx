@@ -21,10 +21,10 @@ type Vec3 = [number, number, number];
 type Vec2 = [number, number];
 type Edge = [Vec3, Vec3];
 
-const ISO_COS = Math.cos(Math.PI / 6);
+const ISO_COS = Math.cos(Math.PI / 36);
 const ISO_SIN = 0.5;
-const ORIGIN_X = 90;
-const ORIGIN_Y = 300;
+const ORIGIN_X = 110;
+const ORIGIN_Y = 270;
 
 const project = ([x, y, z]: Vec3): Vec2 => [
   ORIGIN_X + (x - y) * ISO_COS,
@@ -66,8 +66,8 @@ const ServicesWireframeHero: React.FC<ServicesWireframeHeroProps> = ({
     return () => clearTimeout(t);
   }, []);
 
-  const VIEW_W = 2000;
-  const VIEW_H = 20;
+  const VIEW_W = 2300;
+  const VIEW_H = 100;
 
   // Bridge geometry: two A-frame pylons on piers, deck spanning three
   // bays, fan cables, abutments, and a hatched river below.
@@ -174,13 +174,13 @@ const ServicesWireframeHero: React.FC<ServicesWireframeHeroProps> = ({
       {/* faint blueprint grid, matching the logo's grid mark */}
       <div
         className="absolute inset-0 pointer-events-none"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(237,237,237,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(237,237,237,0.05) 1px, transparent 1px)",
-          backgroundSize: "30px 30px",
-          maskImage: "radial-gradient(ellipse 85% 75% at 50% 40%, black 30%, transparent 92%)",
-          WebkitMaskImage: "radial-gradient(ellipse 85% 75% at 50% 40%, black 30%, transparent 92%)",
-        }}
+        // style={{
+        //   backgroundImage:
+        //     "linear-gradient(to right, rgba(237,237,237,0.05) 1px, transparent 1px), linear-gradient(to bottom, rgba(237,237,237,0.05) 1px, transparent 1px)",
+        //   backgroundSize: "30px 30px",
+        //   maskImage: "radial-gradient(ellipse 85% 75% at 50% 40%, black 30%, transparent 92%)",
+        //   WebkitMaskImage: "radial-gradient(ellipse 85% 75% at 50% 40%, black 30%, transparent 92%)",
+        // }}
       />
 
       {/* yellow ambient glow behind the pylon apex */}

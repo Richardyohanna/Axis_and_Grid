@@ -4,7 +4,7 @@ export const navigation = [
     href: "/",
   },
   {
-    label: "About",
+    label: "About Us",
     href: "/about",
   },
   {
@@ -15,16 +15,16 @@ export const navigation = [
     label: "Projects",
     href: "/projects",
   },
+  // {
+  //   label: "Industries",
+  //   href: "/industries",
+  // },
+  // {
+  //   label: "Careers",
+  //   href: "/careers",
+  // },
   {
-    label: "Industries",
-    href: "/industries",
-  },
-  {
-    label: "Careers",
-    href: "/careers",
-  },
-  {
-    label: "Contact",
+    label: "Contact US",
     href: "/contact",
   },
 ];

@@ -173,7 +173,7 @@ const ServicesCatalogue = () => {
               >
                 <div className="">
                   <div className="py-5 md:py-9">
-                    <h2 className="max-w-4xl text-4xl font-black uppercase leading-[0.9] tracking-[-0.03em] md:text-6xl lg:text-7xl">
+                    <h2 className="max-w-4xl text-3xl font-black uppercase leading-[0.9] tracking-[-0.03em] md:text-5xl lg:text-6xl">
                       {activeService.title}
                     </h2>
 

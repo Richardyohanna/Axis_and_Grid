@@ -12,7 +12,7 @@ interface ProjectsGridProps {
 
 const ProjectsGrid = ({ projects }: ProjectsGridProps) => {
   return (
-    <Section className="relative bg-white text-black z-10 py-18 md:py-38 lg:py-45">
+    <Section className="relative bg-white text-black z-10 py-38 sm:py-43 md:py-45 lg:py-45">
       <Container>
         {/* <div className="mb-10 flex items-end justify-between border-b border-black/10 pb-5">
           <div>

@@ -70,7 +70,7 @@ const Navbar = () => {
             "transition-all duration-300",
 
             // Logo width
-            "w-[170px] sm:w-[190px] md:w-[230px] lg:w-[250px]"
+            "w-[170px] sm:w-[190px] md:w-[240px] lg:w-[260px]"
           )}
         >
           {/* Logo symbol */}
@@ -109,7 +109,7 @@ const Navbar = () => {
                 cn(
                   "relative whitespace-nowrap",
                   "py-2",
-                  "text-[16px] xl:text-[18px]",
+                  "text-[18px] xl:text-[20px]",
                   "font-medium uppercase",
                   "tracking-[1.5px]",
                   "transition-colors duration-300",

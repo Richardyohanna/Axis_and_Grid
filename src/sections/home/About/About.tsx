@@ -11,10 +11,9 @@ const About = () => {
     <Section className="bg-[#0B0B0B]">
     <EngineeringBackground>
       <Container>
-
-           <span className="uppercase tracking-[0.2em] flex justify-center text-yellow text-xl">
-            WHO WE ARE
-          </span>
+          <h2 className="uppercase w-full mb-6 text-4xl font-bold tracking-[0.2em] flex justify-center text-yellow">
+              WHO WE ARE
+          </h2>
         <div className="grid gap-24 lg:grid-cols-2 items-center">
 
           

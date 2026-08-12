@@ -9,10 +9,9 @@ const Projects = () => {
     <Section className="bg-[#0B0B0B]">
       <EngineeringBackground>
         <Container>
-
-          <span className="uppercase tracking-[0.2em] flex justify-center text-yellow text-xl">
+          <h2 className="uppercase w-full mb-6 text-4xl font-bold tracking-[0.2em] flex justify-center text-yellow">
               FEATURED PROJECTS
-          </span> 
+          </h2>
           <div className="max-w-3xl">
     
 

@@ -2,9 +2,10 @@ const SectionHeading = () => {
   return (
     <div className="w-full">
 
-      <span className="uppercase tracking-[0.2em] flex justify-center text-yellow text-xl">
-        OUR SERVICES
-      </span>
+
+      <h2 className="uppercase w-full mb-6 text-4xl font-bold tracking-[0.2em] flex justify-center text-yellow">
+          OUR SERVICES
+      </h2>
 
       <h2 className="mt-6 max-w-3xl text-5xl font-black leading-tight">
         Engineering Solutions

@@ -37,9 +37,10 @@ const Process = () => {
           {/* <span className="font-mono text-xl uppercase tracking-[0.2em] text-yellow">
             HOW A PROJECT RUNS
           </span> */}
-           <span className="uppercase tracking-[0.2em] flex justify-center text-yellow text-xl">
-            HOW A PROJECT RUNS
-          </span>
+
+          <h2 className="uppercase w-full mb-6 text-4xl font-bold tracking-[0.2em] flex justify-center text-yellow">
+              HOW A PROJECT RUNS
+          </h2>
           {/* <h2 className="mt-6 text-4xl font-black leading-tight text-white md:text-5xl lg:text-6xl">
             From First Site Visit
             <br />

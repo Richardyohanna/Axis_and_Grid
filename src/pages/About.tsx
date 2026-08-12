@@ -4,6 +4,7 @@ import EngineeringApproach from "../sections/About/EngineeringApproach/Engineeri
 import CoreValues from "../sections/About/CoreValues/CoreValues";
 import Compliance from "../sections/About/Compliance/Compliance";
 // import AboutCTA from "../sections/AboutCTA/AboutCTA";
+import MeetOurTeam from "../sections/About/MeetOurTeam/MeetOurTeam";
 
 const About = () => {
   return (
@@ -16,7 +17,10 @@ const About = () => {
 
       <CoreValues />
 
+      <MeetOurTeam />
+
       <Compliance />
+
 
       {/* <AboutCTA /> */}
     </>

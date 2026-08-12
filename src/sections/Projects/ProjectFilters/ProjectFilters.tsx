@@ -18,7 +18,7 @@ const ProjectFilters = ({
   onCategoryChange,
 }: ProjectFiltersProps) => {
   return (
-    <div className="fixed   pt-28 lg:pt-[100px] w-full z-30 border-b border-black/10 bg-white/90 text-black backdrop-blur-sm ">
+    <div className="fixed   pt-28 lg:pt-[80px] w-full z-30 border-b border-black/10 bg-white/90 text-black backdrop-blur-sm ">
       <div className="mx-auto flex max-w-7xl items-center justify-center overflow-x-auto px-6 lg:px-8">
         <div className="flex min-w-max">
           {categories.map((category) => {
@@ -37,7 +37,10 @@ const ProjectFilters = ({
                   overflow-hidden
                   px-6
                   py-5
-                  text-[12px]
+                  text-[8px]
+                  sm:text-[10px]
+                  md:text-[18px]
+                  lg:text-[20px]
                   font-bold
                   uppercase
                   tracking-[0.18em]
@@ -65,7 +68,7 @@ const ProjectFilters = ({
                   0{index + 1}
                 </span> */}
 
-                <span className="relative">{category}</span>
+                <h1 className="relative">{category}</h1>
 
                 {/* Yellow underline indicator */}
                 <span

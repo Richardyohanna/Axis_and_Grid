@@ -1,5 +1,5 @@
 import { ArrowUpRight } from "lucide-react";
-import logo from "../../assets/logo/logo.png"
+import logo from "../../assets/logo/full_logo.svg";
 
 const Footer = () => {
   return (
@@ -25,7 +25,7 @@ const Footer = () => {
           
           {/* Brand */}
           <div>
-            <div className="flex items-center max-w-[100px] gap-3">
+            <div className="flex items-center max-w-[200px] gap-3">
               {/* Replace this with your actual logo component/image */}
               <img src={logo} alt="" />
             </div>

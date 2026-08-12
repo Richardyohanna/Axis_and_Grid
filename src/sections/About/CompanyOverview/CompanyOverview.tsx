@@ -2,15 +2,18 @@ import { motion } from "framer-motion";
 import Container from "../../../components/ui/Container";
 import Section from "../../../components/ui/Section";
 import about from "../../../assets/images/hero/hero.png";
+// import EngineeringMetric from "../../home/WhyUs/EngineeringMetric";
+import EngineeringBackground from "../../../components/effects/EngineeringBackground";
 
 const CompanyOverview = () => {
   return (
     <Section className="relative -mt-20 bg-white">
         
-        <span className="uppercase w-full mb-10  tracking-[0.2em] flex justify-center text-yellow text-2xl">
-            WHO WE ARE
-        </span>
+      <EngineeringBackground>
       <Container>
+        <h2 className="uppercase w-full mb-6 text-4xl font-bold tracking-[0.2em] flex justify-center text-yellow">
+            WHO WE ARE
+        </h2>
         <div className="grid gap-16  lg:grid-cols-[0.8fr_1.2fr]">
           
           {/* Label */}
@@ -20,7 +23,7 @@ const CompanyOverview = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="sticky top-32 w-full h-full">
+            <div className="w-full h-full">
               {/* <div className="flex items-center gap-3">
                 <span className="font-mono text-[10px] font-bold uppercase tracking-[0.3em] text-[#F5C400]">
                   01
@@ -52,7 +55,7 @@ const CompanyOverview = () => {
             viewport={{ once: true }}
             className="max-w-3xl"
           >
-            <p className="text-2xl font-medium tracking-tight text-[#111111] md:text-4xl">
+            <p className="text-base font-medium tracking-tight text-[#111111] md:text-2xl">
               Axis & Grids delivers construction solutions with the discipline
               of an engineering process.
             </p>
@@ -92,6 +95,7 @@ const CompanyOverview = () => {
           </motion.div>
         </div>
       </Container>
+      </EngineeringBackground>
     </Section>
   );
 };

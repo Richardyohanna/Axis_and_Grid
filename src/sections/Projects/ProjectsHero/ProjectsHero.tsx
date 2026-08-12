@@ -20,7 +20,7 @@ const ProjectsHero = () => {
       />
 
       <Container>
-        <div className="relative z-10 py-28 md:py-38">
+        <div className="relative z-10 py-28 md:py-48 lg:pt-52">
           <motion.div
             initial={{ opacity: 0, y: 25 }}
             animate={{ opacity: 1, y: 0 }}

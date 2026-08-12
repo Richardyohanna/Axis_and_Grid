@@ -1,7 +1,8 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import logo from "../../assets/logo/logo.png";
+import logo from "../../assets/logo/logo-real.svg";
+import logo_text from "../../assets/logo/group_logo_text.svg";
 import { navigation } from "../../data/navigation";
 import useScroll from "../../hooks/useScroll";
 import { cn } from "../../lib/utils";
@@ -24,21 +25,30 @@ const Navbar = () => {
     <header
       className={cn(
         "fixed top-0 left-0 z-50 w-full transition-all duration-400 ease-[cubic-bezier(0.4,0,0.2,1)]",
-        "flex items-center justify-end font-['Barlow_Condensed'] px-[60px]",
+        "flex items-center justify-between font-['Barlow_Condensed'] px-[60px]",
           transparent
             ? "h-25 bg-transparent border-b border-transparent"
-            : "h-[70px] bg-[#111111]/95 backdrop-blur-xl border-b border-[#F5C400]"
+            : "h-[100px] bg-[#111111]/95 backdrop-blur-xl border-b border-[#F5C400]"
       )}
     >
      
       {/* Logo */}
-      <Link to="/" className="absolute left-0 z-10 mt-10 sm:mt-15 lg:mt-25 md:mt-20 ml-5 lg:ml-10 md:ml-6 sm:ml-6 flex items-center gap-2">
+      {/* mt-10 sm:mt-15 lg:mt-25 md:mt-20 ml-5 lg:ml-10 md:ml-6 sm:ml-6 */}
+      <Link to="/" className="w-[230px]  flex gap-2">
         <img
           src={logo}
           alt="Axis & Grid Logo"
           className={cn(
-            "w-full object-contain transition-transform duration-300 ease-in-out",
-            scrolled ? "h-15 sm:h-25 md:h-20 lg:h-30" : "h-20 sm:h-30 md:h-30 lg:h-40"
+            "w-full h-full object-contain transition-transform duration-300 ease-in-out",
+            scrolled ? "h-15 sm:h-25 md:h-20 lg:h-20" : "h-15 sm:h-25 md:h-20 lg:h-20" //"h-20 sm:h-30 md:h-30 lg:h-40"
+          )}
+        />
+        <img
+          src={logo_text}
+          alt="Axis & Grid Logo"
+          className={cn(
+            "w-full h-full object-contain transition-transform duration-300 ease-in-out",
+            scrolled ? "h-15 sm:h-25 md:h-20 lg:h-20" : "h-15 sm:h-25 md:h-20 lg:h-20" //"h-20 sm:h-30 md:h-30 lg:h-40"
           )}
         />
       </Link>

@@ -75,7 +75,7 @@ const Hero = () => {
           items-center
           py-16
           lg:items-start
-          lg:py-20
+          lg:py-15
         "
       >
         <div className="max-w-3xl text-center lg:text-left">
@@ -84,6 +84,10 @@ const Hero = () => {
             ref={titleRef}
             className="text-3xl font-black uppercase leading-[1.05] text-white sm:text-4xl lg:text-6xl xl:text-6.5xl"
           >
+            {/* <span className="text-yellow">
+              Axis And Grids
+            </span>
+            <br /> */}
             Precision
             <br />
 

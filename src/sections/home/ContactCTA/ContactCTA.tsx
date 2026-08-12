@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-import logo from "../../../assets/logo/logo.png";
+import logo from "../../../assets/logo/full_logo.svg";
 import Container from "../../../components/ui/Container";
 import Section from "../../../components/ui/Section";
 
@@ -46,7 +46,7 @@ const ContactCTA = () => {
            
           </div> */}
 
-           <div className="hidden shrink-0 items-center justify-center md:flex md:h-40 md:w-40">
+           <div className="hidden shrink-0 items-center justify-center md:flex md:h-40 md:max-w-[200px]">
             <img src={logo} alt="" className="w-full h-full object-cover" />
           </div>
 

@@ -4,8 +4,12 @@ import SectionHeading from "./SectionHeading";
 import ServiceCard from "./ServiceCard";
 
 import { services } from "../../../data/services";
+import { useNavigate } from "react-router-dom";
 
 const Services = () => {
+
+  const navigate = useNavigate();
+
   return (
     <Section className="">
       
@@ -20,6 +24,9 @@ const Services = () => {
               key={service.id}
               service={service}
               index={index}
+              onClick={() => {
+                navigate(`/services/${service.id}`);
+              }}
             />
           ))}
 

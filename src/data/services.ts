@@ -125,27 +125,9 @@ export const servicesMain: Service[] = [
     ],
     suitableFor: ["Business owners", "Developers", "Commercial property owners"],
   },
-  {
+    {
     number: "03",
-    code: "REN-03",
-    title: "Renovation & Fit-out",
-    shortDescription:
-      "Structural upgrades, remodeling and interior fit-outs.",
-    description:
-      "Our renovation and fit-out services transform existing spaces while considering their current structure, services and intended use. We coordinate construction activities to minimise disruption and maintain control over the project.",
-    image: renovation,
-    scope: [
-      "Building renovations",
-      "Structural upgrades",
-      "Remodeling",
-      "Interior fit-outs",
-      "Space improvements",
-    ],
-    suitableFor: ["Homeowners", "Commercial property owners", "Landlords"],
-  },
-  {
-    number: "04",
-    code: "CIV-04",
+    code: "CIV-03",
     title: "Civil Works",
     shortDescription:
       "Fencing, access roads, drainage and paving for construction sites.",
@@ -161,6 +143,25 @@ export const servicesMain: Service[] = [
     ],
     suitableFor: ["Developers", "Property owners", "Construction projects"],
   },
+  {
+    number: "04",
+    code: "REN-04",
+    title: "Renovation & Fit-out",
+    shortDescription:
+      "Structural upgrades, remodeling and interior fit-outs.",
+    description:
+      "Our renovation and fit-out services transform existing spaces while considering their current structure, services and intended use. We coordinate construction activities to minimise disruption and maintain control over the project.",
+    image: renovation,
+    scope: [
+      "Building renovations",
+      "Structural upgrades",
+      "Remodeling",
+      "Interior fit-outs",
+      "Space improvements",
+    ],
+    suitableFor: ["Homeowners", "Commercial property owners", "Landlords"],
+  },
+
   {
     number: "05",
     code: "SUP-05",

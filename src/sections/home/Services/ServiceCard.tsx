@@ -4,9 +4,11 @@ import { ArrowUpRight } from "lucide-react";
 interface Props {
   service: any;
   index: number;
+  onClick: (id: number) => void;
 }
 
-const ServiceCard = ({ service, index }: Props) => {
+const ServiceCard = ({ service, index, onClick }: Props) => {
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 60 }}
@@ -16,10 +18,12 @@ const ServiceCard = ({ service, index }: Props) => {
         delay: index * 0.1,
       }}
       viewport={{ once: true }}
+      onClick={() => onClick(index)}
       className="
         group
         relative
         overflow-hidden
+        cursor-pointer
         border
         border-white/10
         bg-white/[0.18]
@@ -80,6 +84,7 @@ const ServiceCard = ({ service, index }: Props) => {
               tracking-widest
               text-sm
             "
+            
           >
             Learn More
           </span>

@@ -84,10 +84,10 @@ const Hero = () => {
             ref={titleRef}
             className="text-3xl font-black uppercase leading-[1.05] text-white sm:text-4xl lg:text-6xl xl:text-6.5xl"
           >
-            {/* <span className="text-yellow">
+            <span className="text-yellow text-4xl sm:text-5xl lg:text-6.5xl xl:text-8xl">
               Axis And Grids
             </span>
-            <br /> */}
+            <br />
             Precision
             <br />
 
@@ -105,7 +105,7 @@ const Hero = () => {
                     duration: 0.6,
                     ease: "easeInOut",
                   }}
-                  className="inline-block text-yellow"
+                  className="inline-block text-white"
                 >
                   {activeLine}
                 </motion.span>

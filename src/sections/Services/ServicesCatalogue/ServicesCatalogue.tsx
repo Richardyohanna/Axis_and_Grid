@@ -1,13 +1,21 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
-
+import { useParams } from "react-router-dom";
 import Container from "../../../components/ui/Container";
 import Section from "../../../components/ui/Section";
 import { servicesMain } from "../../../data/services";
 
 const ServicesCatalogue = () => {
-  const [activeService, setActiveService] = useState(servicesMain[0]);
+  const { serviceId } = useParams();
+
+  const selectedService = servicesMain.find(
+    (service) => String(service.number) === serviceId
+  );
+
+  const [activeService, setActiveService] = useState(
+    selectedService ?? servicesMain[0]
+  );
 
   return (
     <Section className="relative bg-white text-black">

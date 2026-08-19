@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 import RevealImage from "../../../components/effects/RevealImage";
 
 interface Props {
@@ -77,14 +77,14 @@ const ProjectCard = ({ project, index }: Props) => {
             {project.location}
           </div>
 
-          <ArrowUpRight
+          {/* <ArrowUpRight
             className="
               transition-transform
               duration-500
               group-hover:translate-x-2
               group-hover:-translate-y-2
             "
-          />
+          /> */}
         </div>
       </div>
 

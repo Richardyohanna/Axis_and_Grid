@@ -1,4 +1,11 @@
-import team1 from "../assets/team/Managing Director.png";
+// import team1 from "../assets/team/Managing Director.png";
+import manager from "../assets/team/Engr. Ezekiel Aiso.png";
+import operations from "../assets/team/Engr. Alfred Eric.jpeg";
+import general from "../assets/team/Arc. Grace A. Aiso.jpeg";
+import technical from "../assets/team/Engr. Maren Jonah.jpeg";
+import arc from "../assets/team/Arc. Israel Titus.jpeg";
+import quantity from "../assets/team/Shado Peacemaker Tibile.png";
+import management from "../assets/team/Engr. Peter A. Musa.png";
 
 export interface TeamMember {
   id: number;
@@ -8,7 +15,7 @@ export interface TeamMember {
   qualifications: string[];
   experience: string;
   company: string;
-  bio: string;
+   bio: string;
   expertise: string[];
   affiliations?: string[];
 }
@@ -16,9 +23,9 @@ export interface TeamMember {
 export const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Team Member Name",
+    name: "Engr. Ezekiel Aiso",
     role: "Civil Engineer / Managing Director",
-    image: team1,
+    image: manager,
 
     qualifications: [
       "B.Eng Civil Engineering",
@@ -46,10 +53,10 @@ export const teamMembers: TeamMember[] = [
 
   {
     id: 2,
-    name: "Team Member Name",
-    role: "Project Manager",
+    name: "Arc. Grace A. Aiso",
+    role: "General Manager",
 
-    image: team1,
+    image: general,
 
     qualifications: [
       "B.Eng Engineering",
@@ -74,10 +81,10 @@ export const teamMembers: TeamMember[] = [
 
   {
     id: 3,
-    name: "Team Member Name",
-    role: "Site Engineer",
+    name: "Engr. Maren Jonah",
+    role: "Technical Director",
 
-    image: team1,
+    image: technical,
 
     qualifications: [
       "B.Eng Civil Engineering",
@@ -101,10 +108,90 @@ export const teamMembers: TeamMember[] = [
 
   {
     id: 4,
-    name: "Team Member Name",
-    role: "Quantity Surveyor",
+    name: "Engr. Alfred Eric",
+    role: "Operations",
 
-    image: team1,
+    image: operations,
+
+    qualifications: [
+      "B.Tech Quantity Surveying",
+    ],
+
+    experience: "7+ Years Experience",
+
+    company: "Axis & Grid Engineering & Construction",
+
+    bio: "Quantity surveying professional responsible for cost planning, measurement, procurement support and financial control throughout the construction process.",
+
+    expertise: [
+      "Cost Management",
+      "Bill of Quantities",
+      "Procurement",
+      "Contract Administration",
+    ],
+
+    affiliations: [],
+  },
+
+   {
+    id: 5,
+    name: "Arc. Israel Titus",
+    role: "???",
+
+    image: arc,
+
+    qualifications: [
+      "B.Tech Quantity Surveying",
+    ],
+
+    experience: "7+ Years Experience",
+
+    company: "Axis & Grid Engineering & Construction",
+
+    bio: "Quantity surveying professional responsible for cost planning, measurement, procurement support and financial control throughout the construction process.",
+
+    expertise: [
+      "Cost Management",
+      "Bill of Quantities",
+      "Procurement",
+      "Contract Administration",
+    ],
+
+    affiliations: [],
+  },
+
+  {
+    id: 6,
+    name: "Shado Peacemaker Tibile",
+    role: "Quantity Surveyor NIQS (Probational)",
+
+    image: quantity,
+
+    qualifications: [
+      "B.Tech Quantity Surveying",
+    ],
+
+    experience: "7+ Years Experience",
+
+    company: "Axis & Grid Engineering & Construction",
+
+    bio: "Quantity surveying professional responsible for cost planning, measurement, procurement support and financial control throughout the construction process.",
+
+    expertise: [
+      "Cost Management",
+      "Bill of Quantities",
+      "Procurement",
+      "Contract Administration",
+    ],
+
+    affiliations: [],
+  },
+  {
+    id: 7,
+    name: "Engr. Peter A. Musa",
+    role: "Operations and management",
+
+    image: management,
 
     qualifications: [
       "B.Tech Quantity Surveying",

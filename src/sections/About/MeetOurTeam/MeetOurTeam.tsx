@@ -1,18 +1,18 @@
-import { useState } from "react";
-import { ArrowUpRight } from "lucide-react";
+// import { useState } from "react";
+// import { ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
 import Container from "../../../components/ui/Container";
 import Section from "../../../components/ui/Section";
 
-import type { TeamMember } from "../../../data/team";
+// import type { TeamMember } from "../../../data/team";
 import  { teamMembers } from "../../../data/team";
-import TeamProfileModal from "./TeamProfileModal";
+// import TeamProfileModal from "./TeamProfileModal";
 import EngineeringBackground from "../../../components/effects/EngineeringBackground";
 
 const MeetOurTeam = () => {
-  const [selectedMember, setSelectedMember] =
-    useState<TeamMember | null>(null);
+//   const [selectedMember, setSelectedMember] =
+//     useState<TeamMember | null>(null);
 
   return (
     <Section className="relative overflow-hidden bg-white text-black">
@@ -122,170 +122,199 @@ const MeetOurTeam = () => {
                     </span>
                 </div> */}
 
-                {/* Team grid */}
-                <div className="mt-8 grid gap-5 md:grid-cols-2">
-                    {teamMembers.map((member, index) => (
-                    <motion.article
-                        key={member.id}
-                        initial={{
-                        opacity: 0,
-                        y: 40,
-                        }}
-                        whileInView={{
-                        opacity: 1,
-                        y: 0,
-                        }}
-                        viewport={{
-                        once: true,
-                        margin: "-80px",
-                        }}
-                        transition={{
-                        duration: 0.6,
-                        delay: index * 0.08,
-                        }}
-                        className="group"
-                    >
-                        <button
-                        type="button"
-                        onClick={() =>
-                            setSelectedMember(member)
-                        }
-                        className="block w-full text-left"
-                        >
-                        {/* Image */}
-                        <div className="relative aspect-[4/3] overflow-hidden bg-[#E9E9E7]">
-
-                            <img
-                            src={member.image}
-                            alt={member.name}
-                            className="
-                                h-full
-                                w-full
-                                object-cover
-                                grayscale
-                                transition-all
-                                duration-700
-                                ease-out
-                                group-hover:scale-[1.03]
-                                group-hover:grayscale-0
-                            "
-                            />
-
-                            {/* Technical grid */}
-                            <div
-                            className="
-                                pointer-events-none
-                                absolute
-                                inset-0
-                                opacity-0
-                                transition-opacity
-                                duration-500
-                                group-hover:opacity-100
-                            "
-                            style={{
-                                backgroundImage: `
-                                linear-gradient(
-                                    rgba(245,196,0,.35) 1px,
-                                    transparent 1px
-                                ),
-                                linear-gradient(
-                                    90deg,
-                                    rgba(245,196,0,.35) 1px,
-                                    transparent 1px
-                                )
-                                `,
-                                backgroundSize: "45px 45px",
-                            }}
-                            />
-
-                            {/* Number */}
-                            <div className="absolute left-5 top-5">
-                            <span className="font-mono text-[9px] font-bold tracking-[0.2em] text-white drop-shadow-md">
-                                TEAM /{" "}
-                                {String(member.id).padStart(2, "0")}
-                            </span>
-                            </div>
-
-                            {/* View profile */}
-                            <div
-                            className="
-                                absolute
-                                bottom-5
-                                right-5
-                                flex
-                                h-11
-                                w-11
-                                items-center
-                                justify-center
-                                border
-                                border-white/50
-                                bg-black/10
-                                text-white
-                                backdrop-blur-sm
-                                transition-all
-                                duration-300
-                                group-hover:bg-[#F5C400]
-                                group-hover:text-[#111111]
-                            "
+                    {/* Team grid */}
+                
+                    <div className="mt-10 grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+                        {teamMembers.map((member, index) => (
+                            <motion.article
+                                key={member.id}
+                                initial={{
+                                    opacity: 0,
+                                    y: 30,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                }}
+                                viewport={{
+                                    once: true,
+                                    margin: "-80px",
+                                }}
+                                transition={{
+                                    duration: 0.6,
+                                    delay: index * 0.08,
+                                }}
+                                className="group"
                             >
-                            <ArrowUpRight size={16} />
-                            </div>
-                        </div>
-
-                        {/* Details */}
-                        <div className="border-b border-black/10 py-6">
-                            <div className="flex items-start justify-between gap-6">
-                            <div>
-                                <h3 className="text-xl font-black uppercase tracking-tight md:text-2xl">
-                                {member.name}
-                                </h3>
-
-                                <p className="mt-2 font-mono text-[9px] font-bold uppercase tracking-[0.16em] text-[#F5C400]">
-                                {member.role}
-                                </p>
-                            </div>
-
-                            <span className="hidden font-mono text-[8px] uppercase tracking-[0.15em] text-black/30 sm:block">
-                                {member.experience}
-                            </span>
-                            </div>
-
-                            {/* Qualifications */}
-                            <div className="mt-5 flex flex-wrap gap-2">
-                            {member.qualifications.map(
-                                (qualification) => (
-                                <span
-                                    key={qualification}
-                                    className="
-                                    border
-                                    border-black/10
-                                    px-3
-                                    py-2
-                                    font-mono
-                                    text-[8px]
-                                    uppercase
-                                    tracking-[0.1em]
-                                    text-black/45
-                                    "
+                                <button
+                                    type="button"
+                                    // onClick={() => setSelectedMember(member)}
+                                    className="block w-full text-left"
                                 >
-                                    {qualification}
-                                </span>
-                                )
-                            )}
-                            </div>
-                        </div>
-                        </button>
-                    </motion.article>
-                    ))}
-                </div>
+                                    {/* ================= IMAGE ================= */}
+                                    <div className="relative aspect-[4/5] overflow-hidden bg-[#E9E9E7]">
+                                        
+                                        <img
+                                            src={member.image}
+                                            alt={member.name}
+                                            className="
+                                                h-full
+                                                w-full
+                                                object-cover
+                                                grayscale
+                                                transition-all
+                                                duration-700
+                                                ease-out
+                                                group-hover:scale-[1.04]
+                                                group-hover:grayscale-0
+                                            "
+                                        />
+
+                                        {/* Dark overlay */}
+                                        <div
+                                            className="
+                                                pointer-events-none
+                                                absolute
+                                                inset-0
+                                                bg-gradient-to-t
+                                                from-black/50
+                                                via-transparent
+                                                to-transparent
+                                                opacity-60
+                                                transition-opacity
+                                                duration-500
+                                                group-hover:opacity-80
+                                            "
+                                        />
+
+                                        {/* Technical Grid */}
+                                        <div
+                                            className="
+                                                pointer-events-none
+                                                absolute
+                                                inset-0
+                                                opacity-0
+                                                transition-opacity
+                                                duration-500
+                                                group-hover:opacity-100
+                                            "
+                                            style={{
+                                                backgroundImage: `
+                                                    linear-gradient(
+                                                        rgba(245,196,0,.3) 1px,
+                                                        transparent 1px
+                                                    ),
+                                                    linear-gradient(
+                                                        90deg,
+                                                        rgba(245,196,0,.3) 1px,
+                                                        transparent 1px
+                                                    )
+                                                `,
+                                                backgroundSize: "45px 45px",
+                                            }}
+                                        />
+
+                                        {/* Team Number */}
+                                        <div className="absolute left-5 top-5">
+                                            <span
+                                                className="
+                                                    font-mono
+                                                    text-[9px]
+                                                    font-bold
+                                                    uppercase
+                                                    tracking-[0.2em]
+                                                    text-white
+                                                    drop-shadow-md
+                                                "
+                                            >
+                                                TEAM / {String(member.id).padStart(2, "0")}
+                                            </span>
+                                        </div>
+
+                                        {/* Yellow Accent */}
+                                        <div
+                                            className="
+                                                absolute
+                                                bottom-0
+                                                left-0
+                                                h-[3px]
+                                                w-0
+                                                bg-[#F5C400]
+                                                transition-all
+                                                duration-500
+                                                group-hover:w-full
+                                            "
+                                        />
+                                    </div>
+
+                                    {/* ================= DETAILS ================= */}
+                                    <div className="pt-5">
+                                        <div className="flex items-start justify-between gap-4">
+                                            
+                                            {/* Name + Role */}
+                                            <div>
+                                                <h3
+                                                    className="
+                                                        text-xl
+                                                        font-black
+                                                        uppercase
+                                                        leading-none
+                                                        tracking-tight
+                                                        text-[#111111]
+                                                        transition-colors
+                                                        duration-300
+                                                        group-hover:text-[#F5C400]
+                                                        md:text-2xl
+                                                    "
+                                                >
+                                                    {member.name}
+                                                </h3>
+
+                                                <div className="mt-3 flex items-center gap-3">
+                                                    <span className="h-[1px] w-6 bg-[#F5C400]" />
+
+                                                    <p
+                                                        className="
+                                                            font-mono
+                                                            text-[9px]
+                                                            font-bold
+                                                            uppercase
+                                                            tracking-[0.16em]
+                                                            text-black/50
+                                                        "
+                                                    >
+                                                        {member.role}
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            {/* Index */}
+                                            <span
+                                                className="
+                                                    shrink-0
+                                                    font-mono
+                                                    text-[9px]
+                                                    font-bold
+                                                    tracking-[0.15em]
+                                                    text-black/25
+                                                "
+                                            >
+                                                {String(index + 1).padStart(2, "0")}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </motion.article>
+                        ))}
+                    </div>
                 </div>
             </Container>
         </EngineeringBackground>
       {/* Profile modal */}
-      <TeamProfileModal
+      {/* <TeamProfileModal
         member={selectedMember}
         onClose={() => setSelectedMember(null)}
-      />
+      /> */}
     </Section>
   );
 };

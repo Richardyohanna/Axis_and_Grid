@@ -43,6 +43,20 @@ import project4 from "../assets/projects/project4.png";
 import hero from "../assets/images/hero/hero.png";
 import renovation from "../assets/services/Renovation.png";
 
+import res1 from "../assets/projects/res1.jpeg";
+import res2 from "../assets/projects/res2.jpeg";
+import res3 from "../assets/projects/res3.jpeg";
+import res4 from "../assets/projects/res4.jpeg";
+import res5 from "../assets/projects/res5.jpeg";
+import res6 from "../assets/projects/res6.jpeg";
+import res7 from "../assets/projects/res7.jpeg";
+import res8 from "../assets/projects/res8.jpeg";
+import res9 from "../assets/projects/res9.jpeg";
+import res10 from "../assets/projects/res10.jpeg";
+import res11 from "../assets/projects/res11.jpeg";
+import res12 from "../assets/projects/res12.jpeg";
+import res13 from "../assets/projects/res13.jpeg";
+
 export const projects = [
   {
     id: 1,
@@ -96,7 +110,7 @@ export const heroFeaturedProjects = [
     category: "Commercial",
     location: "Lagos",
     year: "2025",
-    image: hero,
+    image: res1,
     featured: false,
     size: "small",
   },
@@ -165,7 +179,7 @@ export const projectsMain: Project[] = [
     status: "Completed",
     description:
       "Residential construction delivered through coordinated structural, building and finishing works.",
-    image: project1,
+    image: res1,
     featured: false,
   },
 
@@ -192,9 +206,22 @@ export const projectsMain: Project[] = [
       "Renovation and improvement works carried out on an existing residential property.",
     image: renovation,
   },
+  
+    {
+    id: 5,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res2,
+    featured: false,
+  },
 
   {
-    id: 5,
+    id: 6,
     title: "Commercial Building",
     category: "Commercial",
     location: "FCT, Nigeria",
@@ -207,7 +234,7 @@ export const projectsMain: Project[] = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "External Civil Works",
     category: "Civil",
     location: "Abuja, Nigeria",
@@ -216,5 +243,142 @@ export const projectsMain: Project[] = [
     description:
       "External construction works supporting access, drainage and site functionality.",
     image: project4,
+  },
+
+    {
+    id: 8,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res3,
+    featured: false,
+  },
+
+    {
+    id: 9,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res4,
+    featured: false,
+  },
+
+    {
+    id: 10,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res5,
+    featured: false,
+  },
+
+    {
+    id: 11,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res6,
+    featured: false,
+  },
+
+    {
+    id: 12,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res7,
+    featured: false,
+  },
+      {
+    id: 12,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res8,
+    featured: false,
+  },
+      {
+    id: 12,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res9,
+    featured: false,
+  },
+      {
+    id: 12,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res10,
+    featured: false,
+  },
+      {
+    id: 12,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res11,
+    featured: false,
+  },
+      {
+    id: 12,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res12,
+    featured: false,
+  },
+      {
+    id: 12,
+    title: "Residential Development",
+    category: "Residential",
+    location: "Abuja, Nigeria",
+    year: "2025",
+    status: "Completed",
+    description:
+      "Residential construction delivered through coordinated structural, building and finishing works.",
+    image: res13,
+    featured: false,
   },
 ];

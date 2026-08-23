@@ -56,6 +56,7 @@ import res10 from "../assets/projects/res10.jpeg";
 import res11 from "../assets/projects/res11.jpeg";
 import res12 from "../assets/projects/res12.jpeg";
 import res13 from "../assets/projects/res13.jpeg";
+import estate from "../assets/projects/estate.png";
 
 export const projects = [
   {
@@ -117,7 +118,7 @@ export const heroFeaturedProjects = [
   {
     id: 2,
     title: "Drainage Infrastructure",
-    category: "Civil",
+    category: "Infrastruture",
     location: "Jos",
     year: "2025",
     image: project3,
@@ -126,11 +127,11 @@ export const heroFeaturedProjects = [
   },
   {
     id: 3,
-    title: "Bridge Construction",
-    category: "Infrastructure",
+    title: "Estate Construction",
+    category: "Civil",
     location: "Kaduna",
     year: "2024",
-    image: project4,
+    image: estate,
     featured: true,
     size: "large",
   },

@@ -59,7 +59,7 @@ const ContactCTA = () => {
             </h2>
 
             <a
-              href="mailto:info@axisandgrids.ng"
+              href="mailto:info@axisandgrids.com"
               className="
                 group
                 inline-flex

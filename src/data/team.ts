@@ -24,7 +24,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: 1,
     name: "Engr. Ezekiel Aiso",
-    role: "Civil Engineer / Managing Director",
+    role: "Managing Director",
     image: manager,
 
     qualifications: [

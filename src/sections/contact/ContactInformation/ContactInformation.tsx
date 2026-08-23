@@ -25,7 +25,7 @@ const ContactInformation = () => {
         <ActionRow
           icon={<Mail size={16} />}
           label="Email"
-          value="info@axisandgrids.ng"
+          value="info@axisandgrids.com"
           href="mailto:info@axisandgrids.ng"
         />
         <ActionRow

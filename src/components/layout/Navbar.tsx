@@ -228,7 +228,7 @@ const Navbar = () => {
           ))}
 
           {/* Contact */}
-          <Link
+          {/* <Link
             to="/contact"
             className={cn(
               "block",
@@ -247,7 +247,7 @@ const Navbar = () => {
             )}
           >
             Contact
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>

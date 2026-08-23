@@ -120,8 +120,10 @@ const Hero = () => {
           </p>
 
           <div className="mt-5 flex flex-wrap justify-center gap-5 lg:justify-start">
-            <Button>Start Your Project</Button>
-            <Button variant="secondary">Explore Projects</Button>
+            <Button onClick={() => (window.location.href = "/contact")}>
+              Start Your Project
+            </Button>
+            <Button onClick={() => (window.location.href = "/projects")} variant="secondary" >Explore Projects</Button>
           </div>
 
           {/* Live "now building" indicator */}

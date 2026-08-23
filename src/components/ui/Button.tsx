@@ -4,11 +4,13 @@ import clsx from "clsx";
 interface ButtonProps {
   children: React.ReactNode;
   variant?: "primary" | "secondary";
+  onClick?: () => void;
 }
 
 const Button = ({
   children,
   variant = "primary",
+  onClick
 }: ButtonProps) => {
   return (
     <button
@@ -18,6 +20,7 @@ const Button = ({
           ? "bg-yellow text-black"
           : "border border-white/30 text-white "
       )}
+      onClick={onClick}
     >
       <span className="relative z-10 flex items-center gap-3 group-hover:text-black">
         {children}

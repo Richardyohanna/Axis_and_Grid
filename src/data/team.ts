@@ -109,7 +109,7 @@ export const teamMembers: TeamMember[] = [
   {
     id: 4,
     name: "Engr. Alfred Eric",
-    role: "Operations",
+    role: "Operations Manager",
 
     image: operations,
 
@@ -136,7 +136,7 @@ export const teamMembers: TeamMember[] = [
    {
     id: 5,
     name: "Arc. Israel Titus",
-    role: "???",
+    role: "Senior architect",
 
     image: arc,
 

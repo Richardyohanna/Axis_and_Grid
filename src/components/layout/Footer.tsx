@@ -51,10 +51,10 @@ const Footer = () => {
 
               <li>
                 <a
-                  href="mailto:info@axisandgrids.ng"
+                  href="mailto:info@axisandgrids.com"
                   className="transition-colors hover:text-yellow"
                 >
-                  info@axisandgrids.ng
+                  info@axisandgrids.com
                 </a>
               </li>
 
@@ -106,7 +106,7 @@ const Footer = () => {
             </p>
 
             <a
-              href="mailto:info@axisandgrids.ng"
+              href="mailto:info@axisandgrids.com"
               className="group mt-6 inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em]"
             >
               Contact

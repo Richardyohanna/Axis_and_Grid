@@ -21,6 +21,14 @@ const complianceItems = [
   },
   {
     number: "03",
+    code: "COREN",
+    title: "Engineering Regulation",
+    description:
+      "The company is working toward registration with the Council for the Regulation of Engineering in Nigeria.",
+    status: "IN PROGRESS",
+  },
+  {
+    number: "04",
     code: "TAX",
     title: "Tax Compliance",
     description:
@@ -28,7 +36,7 @@ const complianceItems = [
     status: "REGISTERED",
   },
   {
-    number: "04",
+    number: "05",
     code: "INS",
     title: "Project Insurance",
     description:

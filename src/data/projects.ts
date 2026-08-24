@@ -311,7 +311,7 @@ export const projectsMain: Project[] = [
     featured: false,
   },
       {
-    id: 12,
+    id: 13,
     title: "Residential Development",
     category: "Residential",
     location: "Abuja, Nigeria",
@@ -323,7 +323,7 @@ export const projectsMain: Project[] = [
     featured: false,
   },
       {
-    id: 12,
+    id: 14,
     title: "Residential Development",
     category: "Residential",
     location: "Abuja, Nigeria",
@@ -335,7 +335,7 @@ export const projectsMain: Project[] = [
     featured: false,
   },
       {
-    id: 12,
+    id: 15,
     title: "Residential Development",
     category: "Residential",
     location: "Abuja, Nigeria",
@@ -347,7 +347,7 @@ export const projectsMain: Project[] = [
     featured: false,
   },
       {
-    id: 12,
+    id: 16,
     title: "Residential Development",
     category: "Residential",
     location: "Abuja, Nigeria",
@@ -359,7 +359,7 @@ export const projectsMain: Project[] = [
     featured: false,
   },
       {
-    id: 12,
+    id: 17,
     title: "Residential Development",
     category: "Residential",
     location: "Abuja, Nigeria",
@@ -371,7 +371,7 @@ export const projectsMain: Project[] = [
     featured: false,
   },
       {
-    id: 12,
+    id: 18,
     title: "Residential Development",
     category: "Residential",
     location: "Abuja, Nigeria",
